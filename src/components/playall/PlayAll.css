@@ -1,0 +1,15 @@
+.play{
+    margin-left: 10px; 
+}
+
+.play button{
+    cursor: pointer;
+
+}
+.play button:hover{
+    background-color: cyan;
+    transition: all .5s linear;
+}
+.controls button{
+    height: 25px !important;
+}

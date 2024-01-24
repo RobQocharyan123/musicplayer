@@ -1,0 +1,214 @@
+.header {
+  width: 100%;
+  display: flex;
+  background-color: gray;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 50px;
+}
+
+.first {
+  width: 50%;
+  display: flex;
+}
+
+.play {
+  display: flex;
+  background-color: gray;
+  border: none;
+  outline: none;
+}
+
+.play .playik {
+  width: 100px;
+  display: flex;
+  height: 30px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.play button:first-child span {
+  margin-left: 10px;
+  color: black;
+  font-weight: 700;
+}
+
+.play button:last-child {
+  outline: none;
+  height: 30px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.add {
+  display: flex;
+  background-color: gray;
+  border: none;
+  outline: none;
+}
+
+.add button:first-child {
+  width: 100px;
+  display: flex;
+  height: 30px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.add button:first-child:hover {
+  background-color: cyan;
+  transition: all 0.5s linear;
+}
+
+.add button:first-child span {
+  margin-left: 10px;
+  color: black;
+  font-weight: 700;
+}
+
+.add button:last-child {
+  outline: none;
+  height: 30px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.second {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.second .track button {
+  width: 120px;
+  display: flex;
+  height: 30px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.second .track button svg:nth-child(1) {
+  margin-right: 5px;
+  color: black;
+}
+.second .track button span {
+  color: black;
+  font-weight: 700;
+}
+
+.second .track button svg:nth-child(3) {
+  margin-left: 5px;
+}
+
+.input {
+  width: 120px;
+  display: flex;
+  height: 30px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  position: relative;
+  margin-right: 50px;
+}
+.input svg {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.input input {
+  border-radius: 50px;
+  width: 150px;
+  display: flex;
+  height: 30px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  outline: none;
+  padding-left: 40px;
+
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1052px) {
+  .header {
+    height: 100px;
+  }
+  .first {
+    flex-direction: column;
+  }
+
+  .second {
+    flex-direction: column;
+  }
+
+  .three {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .three button {
+    width: 120px;
+    display: flex;
+    height: 30px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .addall {
+    margin-left: 10px;
+  }
+  .second .track button {
+    width: 150px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    height: 100px;
+  }
+  .first {
+    flex-direction: column;
+  }
+
+  .second {
+    flex-direction: column;
+  }
+
+  .three {
+    flex-direction: row;
+    position: absolute;
+    top: 182px;
+  }
+  .three button {
+    width: 120px;
+    display: flex;
+    height: 30px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .addall {
+    margin-left: 10px;
+  }
+  .second .track button {
+    width: 150px;
+    margin-left: 0;
+  }
+}

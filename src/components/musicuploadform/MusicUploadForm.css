@@ -1,0 +1,13 @@
+.three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three input {
+  margin-right: 10px;
+}
+
+.three button {
+  margin-right: 5px;
+}
